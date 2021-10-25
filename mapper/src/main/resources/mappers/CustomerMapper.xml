@@ -15,12 +15,4 @@
         <result column="other1" jdbcType="VARCHAR" property="other1"/>
         <result column="other2" jdbcType="VARCHAR" property="other2"/>
     </resultMap>
-    <update id="updateBashInfroByCusId">
-        UPDATE customer
-        set cust_name=#{cusName},
-            cust_telno=#{cusPhone},
-            cust_email=#{cusEmail},
-            other2=#{other2}
-        where cust_id = #{cusId}
-    </update>
 </mapper>
