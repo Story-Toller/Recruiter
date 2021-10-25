@@ -5,44 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="92de15ad-e6d4-4d2d-9e23-ba1e49f246cc" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/beans/src/main/java/com/yun/beans/vo/test.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/src/main/java/com/yun/controller/CollectionController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/src/main/java/com/yun/controller/CompanyAdminController.java" beforeDir="false" afterPath="$PROJECT_DIR$/api/src/main/java/com/yun/controller/CompanyAdminController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/src/main/java/com/yun/controller/CompanyController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/src/main/java/com/yun/controller/CreateResumeController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/src/main/java/com/yun/controller/CustomerController.java" beforeDir="false" afterPath="$PROJECT_DIR$/api/src/main/java/com/yun/controller/CustomerController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/src/main/java/com/yun/controller/IndexController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/src/main/java/com/yun/controller/JobDesController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/src/main/java/com/yun/controller/JobGuideController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/src/test/java/com/yun/ApiApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/api/src/test/java/com/yun/ApiApplicationTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/beans/src/main/java/com/yun/beans/vo/CompanyVo.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/beans/src/main/java/com/yun/beans/vo/JobCollectionVo.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/beans/src/main/java/com/yun/beans/vo/JobDesVo.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mapper/src/main/java/com/yun/dao/mapper/CompanyMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/mapper/src/main/java/com/yun/dao/mapper/CompanyMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mapper/src/main/java/com/yun/dao/mapper/CustomerCollectionMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/mapper/src/main/java/com/yun/dao/mapper/CustomerCollectionMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mapper/src/main/java/com/yun/dao/mapper/CustomerMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/mapper/src/main/java/com/yun/dao/mapper/CustomerMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mapper/src/main/java/com/yun/dao/mapper/JobMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/mapper/src/main/java/com/yun/dao/mapper/JobMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mapper/src/main/java/com/yun/dao/mapper/UserMapper.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mapper/src/main/resources/mappers/CompanyMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/mapper/src/main/resources/mappers/CompanyMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mapper/src/main/resources/mappers/CustomerCollectionMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/mapper/src/main/resources/mappers/CustomerCollectionMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mapper/src/main/resources/mappers/CustomerMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/mapper/src/main/resources/mappers/CustomerMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mapper/src/main/resources/mappers/JobMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/mapper/src/main/resources/mappers/JobMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mapper/src/main/resources/mappers/usermapper.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/src/main/java/com/yun/service/business/Collectionservice.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/src/main/java/com/yun/service/business/CompanyAdminService.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/src/main/java/com/yun/service/business/CompanyAdminService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/src/main/java/com/yun/service/business/CompanyService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/src/main/java/com/yun/service/business/CustomerService.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/src/main/java/com/yun/service/business/CustomerService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/src/main/java/com/yun/service/business/IndexJobService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/src/main/java/com/yun/service/business/JobDesService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/src/main/java/com/yun/service/business/JobGuideService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/src/main/java/com/yun/service/impl/CollectionServiceImpl.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/service/src/main/java/com/yun/service/impl/CompanyAdminServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/src/main/java/com/yun/service/impl/CompanyAdminServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/src/main/java/com/yun/service/impl/CompanyServiceImpl.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/src/main/java/com/yun/service/impl/CustomerServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/src/main/java/com/yun/service/impl/CustomerServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/src/main/java/com/yun/service/impl/IndexJobServiceImpl.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/src/main/java/com/yun/service/impl/JobDesServiceImpl.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/src/main/java/com/yun/service/impl/JobGuideServiceImpl.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -315,7 +279,7 @@
       <workItem from="1635127988481" duration="3973000" />
       <workItem from="1635132042625" duration="442000" />
       <workItem from="1635132514915" duration="522000" />
-      <workItem from="1635133095680" duration="5590000" />
+      <workItem from="1635133095680" duration="8890000" />
     </task>
     <task id="LOCAL-00001" summary="整合项目架构">
       <created>1632637021522</created>
@@ -520,7 +484,14 @@
       <option name="project" value="LOCAL" />
       <updated>1635133828232</updated>
     </task>
-    <option name="localTasksCounter" value="30" />
+    <task id="LOCAL-00030" summary="招聘者项目初步搭建">
+      <created>1635147848997</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1635147848997</updated>
+    </task>
+    <option name="localTasksCounter" value="31" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -574,9 +545,14 @@
           <option name="timeStamp" value="3" />
         </breakpoint>
         <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/service/src/main/java/com/yun/service/impl/CompanyAdminServiceImpl.java</url>
+          <line>64</line>
+          <option name="timeStamp" value="7" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/api/src/main/java/com/yun/controller/CompanyAdminController.java</url>
           <line>44</line>
-          <option name="timeStamp" value="5" />
+          <option name="timeStamp" value="8" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
