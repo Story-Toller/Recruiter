@@ -5,8 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="92de15ad-e6d4-4d2d-9e23-ba1e49f246cc" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/api/src/main/java/com/yun/controller/IndexShowController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service/src/main/java/com/yun/service/business/IndexShowService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service/src/main/java/com/yun/service/impl/IndexShowServiceImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/src/main/java/com/yun/service/impl/CompanyAdminServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/src/main/java/com/yun/service/impl/CompanyAdminServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mapper/src/main/java/com/yun/dao/mapper/CustomerMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/mapper/src/main/java/com/yun/dao/mapper/CustomerMapper.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -110,19 +113,6 @@
     </key>
   </component>
   <component name="RunManager" selected="Spring Boot.ApiApplication">
-    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
-      <option name="arquillianRunConfiguration">
-        <value>
-          <option name="containerStateName" value="" />
-        </value>
-      </option>
-      <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="ApiApplicationTests.contextLoads" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="api" />
       <extension name="coverage">
@@ -221,10 +211,10 @@
       <item itemvalue="JUnit.ApiApplicationTests.contextLoads7" />
       <item itemvalue="JUnit.ApiApplicationTests.contextLoads8" />
       <item itemvalue="JUnit.ApiApplicationTests.contextLoads9" />
-      <item itemvalue="Spring Boot.ApiApplication" />
-      <item itemvalue="Spring Boot.RecruiterApplication" />
       <item itemvalue="JUnit.ApiApplicationTests.contextLoads" />
       <item itemvalue="JUnit.ApiApplicationTests.contextLoads2" />
+      <item itemvalue="Spring Boot.ApiApplication" />
+      <item itemvalue="Spring Boot.RecruiterApplication" />
     </list>
     <recent_temporary>
       <list>
@@ -279,7 +269,8 @@
       <workItem from="1635127988481" duration="3973000" />
       <workItem from="1635132042625" duration="442000" />
       <workItem from="1635132514915" duration="522000" />
-      <workItem from="1635133095680" duration="8890000" />
+      <workItem from="1635133095680" duration="9909000" />
+      <workItem from="1635211883817" duration="1064000" />
     </task>
     <task id="LOCAL-00001" summary="整合项目架构">
       <created>1632637021522</created>
@@ -491,7 +482,14 @@
       <option name="project" value="LOCAL" />
       <updated>1635147848997</updated>
     </task>
-    <option name="localTasksCounter" value="31" />
+    <task id="LOCAL-00031" summary="提供招聘者登陆注册接口">
+      <created>1635152205620</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1635152205620</updated>
+    </task>
+    <option name="localTasksCounter" value="32" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -510,7 +508,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="整合项目架构" />
     <MESSAGE value="构建实体类" />
     <MESSAGE value="整合tkmapper，完成dao层接口，实体类，mapper.xml自动注入" />
     <MESSAGE value="mapper接口统一加入@Mapper注解" />
@@ -535,7 +532,8 @@
     <MESSAGE value="提供显示收藏职位列表的接口" />
     <MESSAGE value="提供用户自定义基本信息的接口" />
     <MESSAGE value="招聘者项目初步搭建" />
-    <option name="LAST_COMMIT_MESSAGE" value="招聘者项目初步搭建" />
+    <MESSAGE value="提供招聘者登陆注册接口" />
+    <option name="LAST_COMMIT_MESSAGE" value="提供招聘者登陆注册接口" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

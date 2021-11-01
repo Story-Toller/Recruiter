@@ -7,4 +7,7 @@ import org.apache.ibatis.annotations.Param;
 
 @Mapper
 public interface CustomerMapper extends FamilyMapper<Customer> {
+//    展示所有应聘者
+
+
 }
