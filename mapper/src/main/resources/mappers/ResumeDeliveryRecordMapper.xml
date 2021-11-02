@@ -1,17 +1,56 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="com.yun.dao.mapper.ResumeDeliveryRecordMapper">
-  <resultMap id="BaseResultMap" type="com.yun.beans.entity.ResumeDeliveryRecord">
-    <!--
-      WARNING - @mbg.generated
-    -->
-    <id column="resume_delivery_record_id" jdbcType="INTEGER" property="resumeDeliveryRecordId" />
-    <result column="cust_id" jdbcType="INTEGER" property="custId" />
-    <result column="resume_id" jdbcType="INTEGER" property="resumeId" />
-    <result column="job_id" jdbcType="INTEGER" property="jobId" />
-    <result column="delivery_time" jdbcType="TIMESTAMP" property="deliveryTime" />
-    <result column="delivery_status" jdbcType="INTEGER" property="deliveryStatus" />
-    <result column="other1" jdbcType="VARCHAR" property="other1" />
-    <result column="other2" jdbcType="VARCHAR" property="other2" />
-  </resultMap>
+    <resultMap id="BaseResultMap" type="com.yun.beans.entity.ResumeDeliveryRecord">
+        <id column="resume_delivery_record_id" jdbcType="INTEGER" property="resumeDeliveryRecordId"/>
+        <result column="cust_id" jdbcType="INTEGER" property="custId"/>
+        <result column="resume_id" jdbcType="INTEGER" property="resumeId"/>
+        <result column="job_id" jdbcType="INTEGER" property="jobId"/>
+        <result column="delivery_time" jdbcType="TIMESTAMP" property="deliveryTime"/>
+        <result column="delivery_status" jdbcType="INTEGER" property="deliveryStatus"/>
+        <result column="other1" jdbcType="VARCHAR" property="other1"/>
+        <result column="other2" jdbcType="VARCHAR" property="other2"/>
+    </resultMap>
+    <resultMap id="ResumeDeliverVo" type="com.yun.beans.vo.ResumeDeliverVo">
+        <id column="resume_delivery_record_id" jdbcType="INTEGER" property="resumeDeliveryRecordId"/>
+        <result column="cust_id" jdbcType="INTEGER" property="custId"/>
+        <result column="resume_id" jdbcType="INTEGER" property="resumeId"/>
+        <result column="job_id" jdbcType="INTEGER" property="jobId"/>
+        <result column="delivery_time" jdbcType="TIMESTAMP" property="deliveryTime"/>
+        <result column="delivery_status" jdbcType="INTEGER" property="deliveryStatus"/>
+        <result column="cust_name" jdbcType="VARCHAR" property="custName"/>
+        <result column="cust_telno" jdbcType="CHAR" property="custTelno"/>
+        <result column="cust_email" jdbcType="VARCHAR" property="custEmail"/>
+        <result column="other1" jdbcType="VARCHAR" property="other1"/>
+        <result column="other2" jdbcType="VARCHAR" property="other2"/>
+    </resultMap>
+    <select id="showCustomerByjobId" resultMap="ResumeDeliverVo">
+        SELECT r.resume_delivery_record_id,
+               r.cust_id,
+               r.resume_id,
+               r.job_id,
+               r.delivery_time,
+               r.delivery_status,
+               c.cust_name,
+               c.cust_telno,
+               c.cust_email,
+               c.other1,
+               c.other2
+        FROM resume_delivery_record r
+                 INNER JOIN customer c
+                            on r.cust_id = c.cust_id
+        where delivery_status = 1
+          and job_id = #{jobId}
+
+    </select>
+    <update id="updateDeliveryToYes">
+        UPDATE resume_delivery_record
+        set delivery_status=1
+        where resume_delivery_record_id = #{resumeDeliveryRecordId}
+    </update>
+    <update id="updateDeliveryToNo">
+        UPDATE resume_delivery_record
+        set delivery_status=2
+        where resume_delivery_record_id = #{resumeDeliveryRecordId}
+    </update>
 </mapper>
