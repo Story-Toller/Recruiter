@@ -6,4 +6,9 @@ import org.apache.ibatis.annotations.Mapper;
 
 @Mapper
 public interface CompanyAdminMapper extends FamilyMapper<CompanyAdmin> {
+    int chengeEmail(String companyAdminEmail, Integer companyAdminId);
+
+    int chengePhone(String companyAdminTelno, Integer companyAdminId);
+
+    int chengePsaaword(String companyAdminPassword, Integer companyAdminId);
 }

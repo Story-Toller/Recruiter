@@ -45,4 +45,26 @@ public class CompanyAdminController {
         ResultVo resultVo = companyAdminService.adminRegister(companyAdmin.getCompanyAdminName(), companyAdmin.getCompanyAdminEmail(), companyAdmin.getCompanyAdminPassword());
         return resultVo;
     }
+
+    @ApiOperation("更改手机号")
+    @PutMapping("/fuckphone")
+    public ResultVo chengePhone111(@RequestParam("companyAdminTelno") String companyAdminTelno,
+                                   @RequestParam("companyAdminId") Integer companyAdminId) {
+        ResultVo resultVo = companyAdminService.chengePhones(companyAdminTelno, companyAdminId);
+        return resultVo;
+    }
+
+    @ApiOperation("更改邮箱")
+    @PutMapping("/cheEmail")
+    public ResultVo chengeEmail(String companyAdminEmail, Integer companyAdminId) {
+        ResultVo resultVo = companyAdminService.chengeEmail(companyAdminEmail, companyAdminId);
+        return resultVo;
+    }
+
+    @ApiOperation("更改密码")
+    @PutMapping("/chePassword")
+    public ResultVo chengePassword(String companyAdminPassword, Integer companyAdminId) {
+        ResultVo resultVo = companyAdminService.chengePassword(companyAdminPassword, companyAdminId);
+        return resultVo;
+    }
 }

@@ -28,7 +28,7 @@ public class CompanyAdmin {
      * 公司管理员账户手机
      */
     @Column(name = "company_admin_telno")
-    private Long companyAdminTelno;
+    private String companyAdminTelno;
 
     /**
      * 公司管理员账户邮箱
@@ -121,7 +121,7 @@ public class CompanyAdmin {
      *
      * @return company_admin_telno - 公司管理员账户手机
      */
-    public Long getCompanyAdminTelno() {
+    public String getCompanyAdminTelno() {
         return companyAdminTelno;
     }
 
@@ -130,7 +130,7 @@ public class CompanyAdmin {
      *
      * @param companyAdminTelno 公司管理员账户手机
      */
-    public void setCompanyAdminTelno(Long companyAdminTelno) {
+    public void setCompanyAdminTelno(String companyAdminTelno) {
         this.companyAdminTelno = companyAdminTelno;
     }
 

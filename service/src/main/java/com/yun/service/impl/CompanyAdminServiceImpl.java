@@ -64,7 +64,7 @@ public class CompanyAdminServiceImpl implements CompanyAdminService {
 //        根据用户邮箱查询，这个用户是否被注册
             Example example = new Example(CompanyAdmin.class);
             Example.Criteria criteria = example.createCriteria();
-            criteria.andEqualTo("companyAdminEmail",adminEmail);
+            criteria.andEqualTo("companyAdminEmail", adminEmail);
             List<CompanyAdmin> companyAdmins = companyAdminMapper.selectByExample(example);
 
             if (companyAdmins.size() == 0) {
@@ -88,4 +88,37 @@ public class CompanyAdminServiceImpl implements CompanyAdminService {
         }
 
     }
+
+    @Override
+    public ResultVo chengeEmail(String companyAdminEmail, Integer companyAdminId) {
+        int i = companyAdminMapper.chengeEmail(companyAdminEmail, companyAdminId);
+        if (i != 0) {
+            return new ResultVo(ResStatus.OK, "操作成功", i);
+        } else {
+            return new ResultVo(ResStatus.NO, "操作失败", i);
+        }
+    }
+
+    @Override
+    public ResultVo chengePhones(String companyAdminTelno, Integer companyAdminId) {
+        int ii = companyAdminMapper.chengePhone(companyAdminTelno, companyAdminId);
+        if (ii != 0) {
+            return new ResultVo(ResStatus.OK, "操作成功", ii);
+        } else {
+            return new ResultVo(ResStatus.NO, "操作失败", ii);
+        }
+    }
+
+    @Override
+    public ResultVo chengePassword(String companyAdminPassword, Integer companyAdminId) {
+        String s = MD5Utils.md5(companyAdminPassword);
+        int i = companyAdminMapper.chengePsaaword(s, companyAdminId);
+        if (i != 0) {
+            return new ResultVo(ResStatus.OK, "操作成功", i);
+        } else {
+            return new ResultVo(ResStatus.NO, "操作失败", i);
+        }
+    }
+
+
 }
