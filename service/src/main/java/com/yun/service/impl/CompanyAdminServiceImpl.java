@@ -15,6 +15,7 @@ import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 import tk.mybatis.mapper.entity.Example;
 
+import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.HashMap;
 import java.util.List;
@@ -24,6 +25,7 @@ public class CompanyAdminServiceImpl implements CompanyAdminService {
 
     @Autowired
     CompanyAdminMapper companyAdminMapper;
+    SimpleDateFormat s = new SimpleDateFormat("yyyy-MM-dd");
 
     @Override
     public ResultVo adminLogin(String adminEmail, String adminPassword) {
@@ -73,7 +75,7 @@ public class CompanyAdminServiceImpl implements CompanyAdminService {
                 companyAdmin.setCompanyAdminName(adminName);
                 companyAdmin.setCompanyAdminEmail(adminEmail);
                 companyAdmin.setCompanyAdminPassword(md5pwd);
-                companyAdmin.setCompanyAdminCreateTime(new Date());
+                companyAdmin.setCompanyAdminCreateTime(s.format(new Date()));
 
                 int i = companyAdminMapper.insert(companyAdmin);
                 if (i > 0) {

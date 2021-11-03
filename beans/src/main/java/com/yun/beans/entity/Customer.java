@@ -39,7 +39,7 @@ public class Customer {
      * 注册时间
      */
     @Column(name = "cust_regist_time")
-    private Date custRegistTime;
+    private String custRegistTime;
 
     /**
      * 更改为用户性别
@@ -152,16 +152,11 @@ public class Customer {
      *
      * @return cust_regist_time - 注册时间
      */
-    public Date getCustRegistTime() {
+    public String getCustRegistTime() {
         return custRegistTime;
     }
 
-    /**
-     * 设置注册时间
-     *
-     * @param custRegistTime 注册时间
-     */
-    public void setCustRegistTime(Date custRegistTime) {
+    public void setCustRegistTime(String custRegistTime) {
         this.custRegistTime = custRegistTime;
     }
 
