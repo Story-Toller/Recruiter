@@ -15,6 +15,8 @@ public class ResStatus {
     public static final int AGREE = 10006;
     //反对事件
     public static final int AGAINST = 10007;
+    //未添加公司
+    public static final int NOCOMPANY = 10008;
 }
 
 

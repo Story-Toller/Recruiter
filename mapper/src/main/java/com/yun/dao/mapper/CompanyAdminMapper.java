@@ -4,6 +4,9 @@ import com.yun.beans.entity.CompanyAdmin;
 import com.yun.dao.tk.FamilyMapper;
 import org.apache.ibatis.annotations.Mapper;
 
+import javax.persistence.criteria.CriteriaBuilder;
+import java.util.List;
+
 @Mapper
 public interface CompanyAdminMapper extends FamilyMapper<CompanyAdmin> {
     int chengeEmail(String companyAdminEmail, Integer companyAdminId);
@@ -11,4 +14,6 @@ public interface CompanyAdminMapper extends FamilyMapper<CompanyAdmin> {
     int chengePhone(String companyAdminTelno, Integer companyAdminId);
 
     int chengePsaaword(String companyAdminPassword, Integer companyAdminId);
+
+    String companyIdIsEmpty(Integer CompanyAdminId);
 }

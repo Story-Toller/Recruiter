@@ -33,4 +33,9 @@
         set company_admin_password=#{companyAdminPassword}
         where company_admin_id = #{companyAdminId}
     </update>
+    <select id="companyIdIsEmpty" resultType="string">
+        SELECT company_id
+        from company_admin
+        where company_admin_id = #{CompanyAdminId}
+    </select>
 </mapper>
