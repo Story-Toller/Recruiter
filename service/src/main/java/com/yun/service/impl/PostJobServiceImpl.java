@@ -1,6 +1,7 @@
 package com.yun.service.impl;
 
 import com.yun.beans.entity.CompanyAdmin;
+import com.yun.beans.entity.Job;
 import com.yun.dao.mapper.CompanyAdminMapper;
 import com.yun.dao.mapper.CompanyMapper;
 import com.yun.dao.mapper.JobMapper;
@@ -11,7 +12,10 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import tk.mybatis.mapper.entity.Example;
 
-import java.util.List;
+import java.math.BigDecimal;
+import java.text.SimpleDateFormat;
+import java.util.Date;
+
 
 @Service
 public class PostJobServiceImpl implements PostJobService {
@@ -22,6 +26,7 @@ public class PostJobServiceImpl implements PostJobService {
     CompanyAdminMapper companyAdminMapper;
     @Autowired
     CompanyMapper companyMapper;
+    SimpleDateFormat s = new SimpleDateFormat("yyyy-MM-dd");
 
     @Override
     public ResultVo PostAJob(Integer companyAdminId) {
@@ -40,4 +45,42 @@ public class PostJobServiceImpl implements PostJobService {
             }
         }
     }
+
+    @Override
+    public ResultVo InserJob(Integer companyAdminId, String jobName, String jobCity, String jobYear,
+                             String jobDegree,Integer jobNeedNumber,String jobWelfare,
+                             String jobDuty,String jobDemand,String jobAddrDetail,
+                             BigDecimal jobMinSalary,BigDecimal jobMaxSalary,String jobOther1,
+                             String jobOther2) {
+        String companyId = companyAdminMapper.companyIdIsEmpty(companyAdminId);
+        int a = Integer.parseInt(companyId);
+        Job job = new Job();
+        job.setCompanyAdminId(companyAdminId);
+        job.setJobName(jobName);
+        job.setJobCity(jobCity);
+        job.setCompanyId(a);
+        job.setJobYear(jobYear);
+        job.setJobPublishTime(s.format(new Date()));
+        job.setJobDegree(jobDegree);
+        job.setJobNeedNumber(jobNeedNumber);
+        job.setJobWelfare(jobWelfare);
+        job.setJobDuty(jobDuty);
+        job.setJobDemand(jobDemand);
+        job.setJobAddrDetail(jobAddrDetail);
+        job.setJobMinSalary(jobMinSalary);
+        job.setJobMaxSalary(jobMaxSalary);
+        job.setJobOther1(jobOther1);
+        job.setJobOther2(jobOther2);
+        int insert = jobMapper.insert(job);
+        if (insert!=0){
+            ResultVo resultVo = new ResultVo(ResStatus.OK, "添加成功", insert);
+            return resultVo;
+        }else {
+            ResultVo resultVo = new ResultVo(ResStatus.NO, "添加失败", null);
+            return resultVo;
+        }
+
+    }
+
+
 }

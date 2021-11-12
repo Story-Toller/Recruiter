@@ -15,9 +15,7 @@ public class TokenConfig implements WebMvcConfigurer {
     @Override
     public void addInterceptors(InterceptorRegistry registry) {
         registry.addInterceptor(tokenInterceptor)
-                .addPathPatterns("/resume/**")
-                .addPathPatterns("/collection/**")
-                .addPathPatterns("/updateCusInf/**")
+                .addPathPatterns("/postJob/**")
                 .excludePathPatterns("/customer/**");
     }
 }
