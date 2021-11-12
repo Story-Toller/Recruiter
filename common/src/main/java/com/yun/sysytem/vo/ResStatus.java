@@ -17,6 +17,10 @@ public class ResStatus {
     public static final int AGAINST = 10007;
     //未添加公司
     public static final int NOCOMPANY = 10008;
+    //必填项空缺
+    public static final int REQUIRED_VACANCY = 10009;
+    //公司信息已存在
+    public static final int HASCOMPANYINF = 10010;
 }
 
 
