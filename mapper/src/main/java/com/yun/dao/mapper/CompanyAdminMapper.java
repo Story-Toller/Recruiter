@@ -3,6 +3,7 @@ package com.yun.dao.mapper;
 import com.yun.beans.entity.CompanyAdmin;
 import com.yun.dao.tk.FamilyMapper;
 import org.apache.ibatis.annotations.Mapper;
+import org.apache.ibatis.annotations.Param;
 
 import javax.persistence.criteria.CriteriaBuilder;
 import java.util.List;
@@ -16,4 +17,6 @@ public interface CompanyAdminMapper extends FamilyMapper<CompanyAdmin> {
     int chengePsaaword(String companyAdminPassword, Integer companyAdminId);
 
     String companyIdIsEmpty(Integer CompanyAdminId);
+
+    int updateCompanyId(@Param("companyId")Integer companyId, @Param("companyAdminId") Integer companyAdminId);
 }

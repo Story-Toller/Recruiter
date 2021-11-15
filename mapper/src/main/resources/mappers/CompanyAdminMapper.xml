@@ -38,4 +38,9 @@
         from company_admin
         where company_admin_id = #{CompanyAdminId}
     </select>
+    <update id="updateCompanyId">
+        UPDATE company_admin
+        SET company_id=#{companyId}
+        WHERE company_admin_id = #{companyAdminId}
+    </update>
 </mapper>

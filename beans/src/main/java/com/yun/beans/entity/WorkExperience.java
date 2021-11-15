@@ -22,13 +22,13 @@ public class WorkExperience {
      * 工作经验开始时间
      */
     @Column(name = "work_start_time")
-    private Date workStartTime;
+    private String workStartTime;
 
     /**
      * 工作经验结束时间
      */
     @Column(name = "work_end_time")
-    private Date workEndTime;
+    private String workEndTime;
 
     /**
      * 工作经验所在公司名称
@@ -119,34 +119,19 @@ public class WorkExperience {
      *
      * @return work_start_time - 工作经验开始时间
      */
-    public Date getWorkStartTime() {
+    public String getWorkStartTime() {
         return workStartTime;
     }
 
-    /**
-     * 设置工作经验开始时间
-     *
-     * @param workStartTime 工作经验开始时间
-     */
-    public void setWorkStartTime(Date workStartTime) {
+    public void setWorkStartTime(String workStartTime) {
         this.workStartTime = workStartTime;
     }
 
-    /**
-     * 获取工作经验结束时间
-     *
-     * @return work_end_time - 工作经验结束时间
-     */
-    public Date getWorkEndTime() {
+    public String getWorkEndTime() {
         return workEndTime;
     }
 
-    /**
-     * 设置工作经验结束时间
-     *
-     * @param workEndTime 工作经验结束时间
-     */
-    public void setWorkEndTime(Date workEndTime) {
+    public void setWorkEndTime(String workEndTime) {
         this.workEndTime = workEndTime;
     }
 

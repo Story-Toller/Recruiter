@@ -28,13 +28,13 @@ public class ProjectExperience {
      * 项目经验开始时间
      */
     @Column(name = "project_start_time")
-    private Date projectStartTime;
+    private String projectStartTime;
 
     /**
      * 项目经验结束时间
      */
     @Column(name = "project_end_time")
-    private Date projectEndTime;
+    private String projectEndTime;
 
     /**
      * 项目经验名称
@@ -119,34 +119,19 @@ public class ProjectExperience {
      *
      * @return project_start_time - 项目经验开始时间
      */
-    public Date getProjectStartTime() {
+    public String getProjectStartTime() {
         return projectStartTime;
     }
 
-    /**
-     * 设置项目经验开始时间
-     *
-     * @param projectStartTime 项目经验开始时间
-     */
-    public void setProjectStartTime(Date projectStartTime) {
+    public void setProjectStartTime(String projectStartTime) {
         this.projectStartTime = projectStartTime;
     }
 
-    /**
-     * 获取项目经验结束时间
-     *
-     * @return project_end_time - 项目经验结束时间
-     */
-    public Date getProjectEndTime() {
+    public String getProjectEndTime() {
         return projectEndTime;
     }
 
-    /**
-     * 设置项目经验结束时间
-     *
-     * @param projectEndTime 项目经验结束时间
-     */
-    public void setProjectEndTime(Date projectEndTime) {
+    public void setProjectEndTime(String projectEndTime) {
         this.projectEndTime = projectEndTime;
     }
 
