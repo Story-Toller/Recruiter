@@ -9,7 +9,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
 @RestController
-@RequestMapping("/com_show")
+@RequestMapping("/index_cus_res")
 @Api(value = "查看首页用户简历", tags = "简历管理")
 @CrossOrigin
 public class ShowIndexCustomerResumeController {

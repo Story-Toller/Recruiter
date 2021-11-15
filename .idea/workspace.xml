@@ -4,12 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="92de15ad-e6d4-4d2d-9e23-ba1e49f246cc" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/api/src/main/java/com/yun/controller/IndexShowController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/service/src/main/java/com/yun/service/business/IndexShowService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/service/src/main/java/com/yun/service/impl/IndexShowServiceImpl.java" afterDir="false" />
+    <list default="true" id="92de15ad-e6d4-4d2d-9e23-ba1e49f246cc" name="Default Changelist" comment="优化时间显示">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mapper/src/main/java/com/yun/dao/mapper/CustomerMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/mapper/src/main/java/com/yun/dao/mapper/CustomerMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/src/main/java/com/yun/controller/ShowIndexCustomerResumeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/api/src/main/java/com/yun/controller/ShowIndexCustomerResumeController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/src/test/java/com/yun/ApiApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/api/src/test/java/com/yun/ApiApplicationTests.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -52,7 +50,6 @@
     </option>
   </component>
   <component name="ProblemsViewState">
-    <option name="selectedIndex" value="1" />
     <option name="sortByName" value="true" />
   </component>
   <component name="ProjectId" id="1yZDY3jf5scUWON3zzK4sGfSFlM" />
@@ -106,14 +103,25 @@
       <recent name="com.yun.dao.mapper" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="com.yun.recruiter.controller" />
       <recent name="com.yun.beans.entity" />
+      <recent name="com.yun.recruiter.controller" />
       <recent name="com.yun.beans.vo" />
       <recent name="com.yun" />
     </key>
   </component>
   <component name="RunManager" selected="Spring Boot.ApiApplication">
-    <configuration name="ApiApplicationTests.contextLoads" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ApiApplicationTests.test2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="api" />
       <extension name="coverage">
         <pattern>
@@ -123,13 +131,13 @@
       </extension>
       <option name="PACKAGE_NAME" value="com.yun" />
       <option name="MAIN_CLASS_NAME" value="com.yun.ApiApplicationTests" />
-      <option name="METHOD_NAME" value="contextLoads" />
+      <option name="METHOD_NAME" value="test2" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ApiApplicationTests.contextLoads2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="ApiApplicationTests.test4" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="api" />
       <extension name="coverage">
         <pattern>
@@ -139,13 +147,13 @@
       </extension>
       <option name="PACKAGE_NAME" value="com.yun" />
       <option name="MAIN_CLASS_NAME" value="com.yun.ApiApplicationTests" />
-      <option name="METHOD_NAME" value="contextLoads2" />
+      <option name="METHOD_NAME" value="test4" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ApiApplicationTests.contextLoads7" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="ApiApplicationTests.test5" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="api" />
       <extension name="coverage">
         <pattern>
@@ -155,13 +163,13 @@
       </extension>
       <option name="PACKAGE_NAME" value="com.yun" />
       <option name="MAIN_CLASS_NAME" value="com.yun.ApiApplicationTests" />
-      <option name="METHOD_NAME" value="contextLoads7" />
+      <option name="METHOD_NAME" value="test5" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ApiApplicationTests.contextLoads8" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="ApiApplicationTests.test6" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="api" />
       <extension name="coverage">
         <pattern>
@@ -171,13 +179,13 @@
       </extension>
       <option name="PACKAGE_NAME" value="com.yun" />
       <option name="MAIN_CLASS_NAME" value="com.yun.ApiApplicationTests" />
-      <option name="METHOD_NAME" value="contextLoads8" />
+      <option name="METHOD_NAME" value="test6" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ApiApplicationTests.contextLoads9" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="ApiApplicationTests.test7" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="api" />
       <extension name="coverage">
         <pattern>
@@ -187,7 +195,7 @@
       </extension>
       <option name="PACKAGE_NAME" value="com.yun" />
       <option name="MAIN_CLASS_NAME" value="com.yun.ApiApplicationTests" />
-      <option name="METHOD_NAME" value="contextLoads9" />
+      <option name="METHOD_NAME" value="test7" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -200,29 +208,21 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="RecruiterApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
-      <module name="recruiter" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.yun.recruiter.RecruiterApplication" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <list>
-      <item itemvalue="JUnit.ApiApplicationTests.contextLoads7" />
-      <item itemvalue="JUnit.ApiApplicationTests.contextLoads8" />
-      <item itemvalue="JUnit.ApiApplicationTests.contextLoads9" />
-      <item itemvalue="JUnit.ApiApplicationTests.contextLoads" />
-      <item itemvalue="JUnit.ApiApplicationTests.contextLoads2" />
+      <item itemvalue="JUnit.ApiApplicationTests.test2" />
+      <item itemvalue="JUnit.ApiApplicationTests.test4" />
+      <item itemvalue="JUnit.ApiApplicationTests.test5" />
       <item itemvalue="Spring Boot.ApiApplication" />
-      <item itemvalue="Spring Boot.RecruiterApplication" />
+      <item itemvalue="JUnit.ApiApplicationTests.test6" />
+      <item itemvalue="JUnit.ApiApplicationTests.test7" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.ApiApplicationTests.contextLoads2" />
-        <item itemvalue="JUnit.ApiApplicationTests.contextLoads" />
-        <item itemvalue="JUnit.ApiApplicationTests.contextLoads9" />
-        <item itemvalue="JUnit.ApiApplicationTests.contextLoads8" />
-        <item itemvalue="JUnit.ApiApplicationTests.contextLoads7" />
+        <item itemvalue="JUnit.ApiApplicationTests.test7" />
+        <item itemvalue="JUnit.ApiApplicationTests.test6" />
+        <item itemvalue="JUnit.ApiApplicationTests.test5" />
+        <item itemvalue="JUnit.ApiApplicationTests.test4" />
+        <item itemvalue="JUnit.ApiApplicationTests.test2" />
       </list>
     </recent_temporary>
   </component>
@@ -271,6 +271,26 @@
       <workItem from="1635132514915" duration="522000" />
       <workItem from="1635133095680" duration="9909000" />
       <workItem from="1635211883817" duration="1064000" />
+      <workItem from="1635747941893" duration="6557000" />
+      <workItem from="1635756166537" duration="1120000" />
+      <workItem from="1635815938697" duration="1004000" />
+      <workItem from="1635817871385" duration="10245000" />
+      <workItem from="1635842531652" duration="1138000" />
+      <workItem from="1635902252861" duration="1939000" />
+      <workItem from="1635918323432" duration="932000" />
+      <workItem from="1635923017953" duration="3209000" />
+      <workItem from="1635989015726" duration="3852000" />
+      <workItem from="1636006673096" duration="891000" />
+      <workItem from="1636081914095" duration="988000" />
+      <workItem from="1636083983917" duration="8720000" />
+      <workItem from="1636123692071" duration="1596000" />
+      <workItem from="1636182504185" duration="11000" />
+      <workItem from="1636428040023" duration="1281000" />
+      <workItem from="1636601524561" duration="9005000" />
+      <workItem from="1636618017626" duration="2739000" />
+      <workItem from="1636680206078" duration="17592000" />
+      <workItem from="1636820271048" duration="614000" />
+      <workItem from="1636939586970" duration="7593000" />
     </task>
     <task id="LOCAL-00001" summary="整合项目架构">
       <created>1632637021522</created>
@@ -489,7 +509,70 @@
       <option name="project" value="LOCAL" />
       <updated>1635152205620</updated>
     </task>
-    <option name="localTasksCounter" value="32" />
+    <task id="LOCAL-00032" summary="应聘者项目基本框架与业务逻辑套用在招聘者上">
+      <created>1635748059590</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1635748059590</updated>
+    </task>
+    <task id="LOCAL-00033" summary="后台提供按处理状态展示某职位投递人信息，提供更改处理状态的接口">
+      <created>1635838224754</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1635838224754</updated>
+    </task>
+    <task id="LOCAL-00034" summary="提供个人信息修改的接口">
+      <created>1635843548228</created>
+      <option name="number" value="00034" />
+      <option name="presentableId" value="LOCAL-00034" />
+      <option name="project" value="LOCAL" />
+      <updated>1635843548228</updated>
+    </task>
+    <task id="LOCAL-00035" summary="更改展示人员接口为按隐私设置方式显示">
+      <created>1635919128133</created>
+      <option name="number" value="00035" />
+      <option name="presentableId" value="LOCAL-00035" />
+      <option name="project" value="LOCAL" />
+      <updated>1635919128133</updated>
+    </task>
+    <task id="LOCAL-00036" summary="优化时间显示">
+      <created>1635929224093</created>
+      <option name="number" value="00036" />
+      <option name="presentableId" value="LOCAL-00036" />
+      <option name="project" value="LOCAL" />
+      <updated>1635929224093</updated>
+    </task>
+    <task id="LOCAL-00037" summary="细节调整">
+      <created>1636618750380</created>
+      <option name="number" value="00037" />
+      <option name="presentableId" value="LOCAL-00037" />
+      <option name="project" value="LOCAL" />
+      <updated>1636618750380</updated>
+    </task>
+    <task id="LOCAL-00038" summary="提供职位添加接口">
+      <created>1636688104122</created>
+      <option name="number" value="00038" />
+      <option name="presentableId" value="LOCAL-00038" />
+      <option name="project" value="LOCAL" />
+      <updated>1636688104122</updated>
+    </task>
+    <task id="LOCAL-00039" summary="提供接口：&#10;用户如果没有绑定公司就先添加公司，要是公司有了就申请公司管理员加入，没有就加公司信息，并绑定第一个添加的人为公司管理员">
+      <created>1636702285084</created>
+      <option name="number" value="00039" />
+      <option name="presentableId" value="LOCAL-00039" />
+      <option name="project" value="LOCAL" />
+      <updated>1636702285084</updated>
+    </task>
+    <task id="LOCAL-00040" summary="增加了查看首页用户简历的接口，更改了部分实体类">
+      <created>1636955769383</created>
+      <option name="number" value="00040" />
+      <option name="presentableId" value="LOCAL-00040" />
+      <option name="project" value="LOCAL" />
+      <updated>1636955769383</updated>
+    </task>
+    <option name="localTasksCounter" value="41" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -508,15 +591,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="构建实体类" />
-    <MESSAGE value="整合tkmapper，完成dao层接口，实体类，mapper.xml自动注入" />
-    <MESSAGE value="mapper接口统一加入@Mapper注解" />
-    <MESSAGE value="新增招聘者登陆注册接口" />
-    <MESSAGE value="备用字段投入使用，customer表other1改为用户头像" />
-    <MESSAGE value="整合jwt，完成token验证以及拦截器的使用&#10;前端登录时收到token，之后资源受限页面都需token验证&#10;主页实现显示用户名和头像功能" />
-    <MESSAGE value="完成主页职位显示功能，更改了job表status字段的属性" />
-    <MESSAGE value="支持显示全职工作与兼职工作" />
-    <MESSAGE value="other1更改为职位状态，other2更改为职位类别" />
     <MESSAGE value="提供行政和技术职位列表的接口" />
     <MESSAGE value="提供其他职位列表的接口" />
     <MESSAGE value="job表新增company_admin_id（职位添加人id）字段" />
@@ -533,7 +607,16 @@
     <MESSAGE value="提供用户自定义基本信息的接口" />
     <MESSAGE value="招聘者项目初步搭建" />
     <MESSAGE value="提供招聘者登陆注册接口" />
-    <option name="LAST_COMMIT_MESSAGE" value="提供招聘者登陆注册接口" />
+    <MESSAGE value="应聘者项目基本框架与业务逻辑套用在招聘者上" />
+    <MESSAGE value="后台提供按处理状态展示某职位投递人信息，提供更改处理状态的接口" />
+    <MESSAGE value="提供个人信息修改的接口" />
+    <MESSAGE value="更改展示人员接口为按隐私设置方式显示" />
+    <MESSAGE value="优化时间显示" />
+    <MESSAGE value="细节调整" />
+    <MESSAGE value="提供职位添加接口" />
+    <MESSAGE value="提供接口：&#10;用户如果没有绑定公司就先添加公司，要是公司有了就申请公司管理员加入，没有就加公司信息，并绑定第一个添加的人为公司管理员" />
+    <MESSAGE value="增加了查看首页用户简历的接口，更改了部分实体类" />
+    <option name="LAST_COMMIT_MESSAGE" value="增加了查看首页用户简历的接口，更改了部分实体类" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -542,20 +625,11 @@
           <properties class="java.lang.NullPointerException" package="java.lang" />
           <option name="timeStamp" value="3" />
         </breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/service/src/main/java/com/yun/service/impl/CompanyAdminServiceImpl.java</url>
-          <line>64</line>
-          <option name="timeStamp" value="7" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/api/src/main/java/com/yun/controller/CompanyAdminController.java</url>
-          <line>44</line>
-          <option name="timeStamp" value="8" />
-        </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/Recruiter$ApiApplication.ic" NAME="ApiApplication Coverage Results" MODIFIED="1635927541637" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
     <SUITE FILE_PATH="coverage/Recruitment$ApiApplication.ic" NAME="ApiApplication Coverage Results" MODIFIED="1634606884109" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
   </component>
 </project>
