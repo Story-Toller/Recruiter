@@ -25,16 +25,16 @@ public class ShowCustomer {
         return showcustomer;
     }
 
-    @PutMapping("/decisionToYes")
+    @PutMapping("/decisionToYes/{resumeDeliveryRecordId}")
     @ApiOperation("更改投递状态为通过")
-    public  ResultVo updateTheCustomer(Integer resumeDeliveryRecordId){
+    public  ResultVo updateTheCustomer(@PathVariable("resumeDeliveryRecordId") Integer resumeDeliveryRecordId, @RequestHeader("token") String token){
 
         ResultVo resultVo = showCustomerResumeService.changeTypeToYes(resumeDeliveryRecordId);
         return resultVo;
     }
-    @PutMapping("/decisionToNo")
+    @PutMapping("/decisionToNo/{resumeDeliveryRecordId}")
     @ApiOperation("更改投递状态为没有通过")
-    public  ResultVo updateTheCustomers(Integer resumeDeliveryRecordId){
+    public  ResultVo updateTheCustomers(@PathVariable("resumeDeliveryRecordId") Integer resumeDeliveryRecordId, @RequestHeader("token") String token){
 
         ResultVo resultVo = showCustomerResumeService.changeTypeToNo(resumeDeliveryRecordId);
         return resultVo;

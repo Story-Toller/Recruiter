@@ -19,4 +19,7 @@ public interface CompanyAdminService {
 
     //    更改密码
     ResultVo chengePassword(String companyAdminPassword, Integer companyAdminId);
+
+    //    展示基本信息
+    ResultVo showBashInfor(Integer companyAdminId);
 }

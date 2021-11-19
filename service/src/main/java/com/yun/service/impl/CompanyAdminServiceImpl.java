@@ -122,5 +122,18 @@ public class CompanyAdminServiceImpl implements CompanyAdminService {
         }
     }
 
-
+    @Override
+    public ResultVo showBashInfor(Integer companyAdminId) {
+        Example example = new Example(CompanyAdmin.class);
+        Example.Criteria criteria = example.createCriteria();
+        criteria.andEqualTo("companyAdminId", companyAdminId);
+        List<CompanyAdmin> companyAdmins = companyAdminMapper.selectByExample(example);
+        if (companyAdmins != null) {
+            ResultVo resultVo = new ResultVo(ResStatus.OK, "sccess", companyAdmins);
+            return resultVo;
+        } else {
+            ResultVo resultVos = new ResultVo(ResStatus.NOT_LOGIN, "q请先登录", null);
+            return resultVos;
+        }
+    }
 }

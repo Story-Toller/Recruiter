@@ -67,4 +67,11 @@ public class CompanyAdminController {
         ResultVo resultVo = companyAdminService.chengePassword(companyAdminPassword, companyAdminId);
         return resultVo;
     }
+
+    @ApiOperation("展示招聘者个人信息接口")
+    @GetMapping("/showAllInfor")
+    public ResultVo showInfor(Integer companyAdminId,@RequestHeader("token") String token) {
+        ResultVo resultVo = companyAdminService.showBashInfor(companyAdminId);
+        return resultVo;
+    }
 }
