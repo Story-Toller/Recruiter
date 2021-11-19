@@ -22,4 +22,26 @@
         <result column="job_other1" jdbcType="VARCHAR" property="jobOther1"/>
         <result column="job_other2" jdbcType="VARCHAR" property="jobOther2"/>
     </resultMap>
+    <select id="selectJobName" resultType="string">
+        SELECT j.job_name
+        from job j
+                 INNER JOIN company_admin c
+                            on j.company_admin_id=c.company_admin_id
+        where job_id=#{jobId}
+    </select>
+    <select id="selectAdminName" resultType="string">
+        SELECT c.company_admin_name
+        from job j
+                 INNER JOIN company_admin c
+                            on j.company_admin_id=c.company_admin_id
+        where job_id=#{jobId}
+    </select>
+    <select id="selectAdminEmail" resultType="string">
+        SELECT c.company_admin_email
+        from job j
+                 INNER JOIN company_admin c
+                            on j.company_admin_id=c.company_admin_id
+        where job_id=#{jobId}
+    </select>
+
 </mapper>

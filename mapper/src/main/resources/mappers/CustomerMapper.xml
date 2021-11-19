@@ -28,4 +28,14 @@
         from customer
         where status = 1
     </select>
+    <select id="selectName" resultType="string">
+        select cust_name
+        from customer
+        where cust_id = #{custId}
+    </select>
+    <select id="selectEmail" resultType="string">
+        SELECT cust_email
+        from customer
+        where cust_id = #{custId}
+    </select>
 </mapper>

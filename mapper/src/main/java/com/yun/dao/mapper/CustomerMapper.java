@@ -12,4 +12,7 @@ public interface CustomerMapper extends FamilyMapper<Customer> {
     //    展示所有应聘者
     List<Customer> showAllCustomer();
 
+    String selectName(Integer custId);
+
+    String selectEmail(Integer custId);
 }
