@@ -38,4 +38,17 @@
         from customer
         where cust_id = #{custId}
     </select>
+    <select id="selectCustomerByName" resultMap="BaseResultMap">
+        SELECT cust_id,
+               cust_name,
+               cust_telno,
+               cust_email,
+               cust_regist_time,
+               status,
+               other1,
+               other2
+        from customer
+        where cust_name like #{keyword} limit #{start}
+            , #{limit}
+    </select>
 </mapper>

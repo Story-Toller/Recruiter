@@ -1,6 +1,7 @@
 package com.yun.dao.mapper;
 
 import com.yun.beans.entity.Customer;
+import com.yun.beans.entity.JobVo;
 import com.yun.dao.tk.FamilyMapper;
 import org.apache.ibatis.annotations.Mapper;
 import org.apache.ibatis.annotations.Param;
@@ -15,4 +16,9 @@ public interface CustomerMapper extends FamilyMapper<Customer> {
     String selectName(Integer custId);
 
     String selectEmail(Integer custId);
+
+    //    职位搜索
+    List<Customer> selectCustomerByName(@Param("keyword") String keyword,
+                                @Param("start") int start,
+                                @Param("limit") int limit);
 }
