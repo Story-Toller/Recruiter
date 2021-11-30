@@ -10,31 +10,4 @@
         <result column="edu_stop" jdbcType="VARCHAR" property="eduStop"/>
         <result column="edu_pro" jdbcType="VARCHAR" property="eduPro"/>
     </resultMap>
-    <resultMap id="EducationVo" type="com.yun.beans.vo.EducationVo">
-        <id column="edu_id" jdbcType="INTEGER" property="eduId"/>
-        <result column="resume_id" jdbcType="INTEGER" property="resumeId"/>
-        <result column="edu_level" jdbcType="VARCHAR" property="eduLevel"/>
-        <result column="resume_name" jdbcType="VARCHAR" property="resumeName"/>
-        <result column="cust_id" jdbcType="INTEGER" property="custId" />
-        <result column="edu_name" jdbcType="VARCHAR" property="eduName"/>
-        <result column="edu_start" jdbcType="VARCHAR" property="eduStart"/>
-        <result column="edu_stop" jdbcType="VARCHAR" property="eduStop"/>
-        <result column="edu_pro" jdbcType="VARCHAR" property="eduPro"/>
-    </resultMap>
-    <select id="showAllEducation" resultMap="EducationVo">
-        SELECT r.resume_id,
-               r.resume_name,
-               r.cust_id,
-               e.edu_id,
-               e.edu_level,
-               e.edu_name,
-               e.edu_start,
-               e.edu_stop,
-               e.edu_pro
-        from resume r
-                 INNER JOIN education e
-                            on r.resume_id = e.resume_id
-        where status = 1
-          and cust_id = #{custId}
-    </select>
 </mapper>

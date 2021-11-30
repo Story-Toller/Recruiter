@@ -9,5 +9,4 @@ import java.util.List;
 
 @Mapper
 public interface SkillMapper extends FamilyMapper<Skill> {
-    List<SkillVo> showAllSkill(Integer custId);
 }

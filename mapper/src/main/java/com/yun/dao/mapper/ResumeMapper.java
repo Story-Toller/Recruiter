@@ -8,7 +8,4 @@ import java.util.List;
 
 @Mapper
 public interface ResumeMapper extends FamilyMapper<Resume> {
-    List<Resume> showAllowedResume(Integer custId);
-
-    int selectResumeIdByCustomerId(Integer custId);
 }

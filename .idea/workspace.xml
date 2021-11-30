@@ -5,27 +5,70 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="92de15ad-e6d4-4d2d-9e23-ba1e49f246cc" name="Default Changelist" comment="优化时间显示">
-      <change afterPath="$PROJECT_DIR$/api/src/main/java/com/yun/controller/ResumeDeliveryRecordController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/beans/src/main/java/com/yun/beans/vo/ResumeDeliveryRecordVo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/service/src/main/java/com/yun/service/business/ResumeDeliveryRecordService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/service/src/main/java/com/yun/service/impl/ResumeDeliveryRecordServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/api/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/src/main/java/com/yun/config/TokenConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/api/src/main/java/com/yun/config/TokenConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/src/main/java/com/yun/controller/CompanyAdminController.java" beforeDir="false" afterPath="$PROJECT_DIR$/api/src/main/java/com/yun/controller/CompanyAdminController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/src/main/java/com/yun/controller/ShowCustomer.java" beforeDir="false" afterPath="$PROJECT_DIR$/api/src/main/java/com/yun/controller/ShowCustomer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/src/main/java/com/yun/config/SwaggerConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/api/src/main/java/com/yun/config/SwaggerConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/src/main/java/com/yun/controller/CompanyAdminController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/src/main/java/com/yun/controller/CompanyDesController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/src/main/java/com/yun/controller/CustomerController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/src/main/java/com/yun/controller/InsertCompanyController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/src/main/java/com/yun/controller/PostJobController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/src/main/java/com/yun/controller/ResumeDeliveryRecordController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/src/main/java/com/yun/controller/ShowCustomer.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/src/main/java/com/yun/controller/ShowCustomerResumeController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/src/main/java/com/yun/controller/ShowIndexCustomerResumeController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/api/src/main/resources/application.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/api/src/test/java/com/yun/ApiApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/api/src/test/java/com/yun/ApiApplicationTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mapper/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/mapper/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/beans/src/main/java/com/yun/beans/vo/CompanyVo.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/beans/src/main/java/com/yun/beans/vo/EducationVo.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/beans/src/main/java/com/yun/beans/vo/HonorVo.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/beans/src/main/java/com/yun/beans/vo/ProjectExperienceVo.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/beans/src/main/java/com/yun/beans/vo/ResumeDeliverVo.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/beans/src/main/java/com/yun/beans/vo/ResumeDeliveryRecordVo.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/beans/src/main/java/com/yun/beans/vo/WordExperenceVo.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mapper/src/main/java/com/yun/dao/mapper/CompanyAdminMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/mapper/src/main/java/com/yun/dao/mapper/CompanyAdminMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mapper/src/main/java/com/yun/dao/mapper/CompanyMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/mapper/src/main/java/com/yun/dao/mapper/CompanyMapper.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mapper/src/main/java/com/yun/dao/mapper/CustomerMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/mapper/src/main/java/com/yun/dao/mapper/CustomerMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mapper/src/main/java/com/yun/dao/mapper/EducationMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/mapper/src/main/java/com/yun/dao/mapper/EducationMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mapper/src/main/java/com/yun/dao/mapper/HonorMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/mapper/src/main/java/com/yun/dao/mapper/HonorMapper.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mapper/src/main/java/com/yun/dao/mapper/JobMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/mapper/src/main/java/com/yun/dao/mapper/JobMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mapper/src/main/java/com/yun/dao/mapper/ProjectExperienceMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/mapper/src/main/java/com/yun/dao/mapper/ProjectExperienceMapper.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mapper/src/main/java/com/yun/dao/mapper/ResumeDeliveryRecordMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/mapper/src/main/java/com/yun/dao/mapper/ResumeDeliveryRecordMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mapper/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/mapper/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mapper/src/main/java/com/yun/dao/mapper/ResumeMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/mapper/src/main/java/com/yun/dao/mapper/ResumeMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mapper/src/main/java/com/yun/dao/mapper/SkillMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/mapper/src/main/java/com/yun/dao/mapper/SkillMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mapper/src/main/java/com/yun/dao/mapper/WorkExperienceMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/mapper/src/main/java/com/yun/dao/mapper/WorkExperienceMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mapper/src/main/resources/genetator/generatorConfig.xml" beforeDir="false" afterPath="$PROJECT_DIR$/mapper/src/main/resources/genetator/generatorConfig.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mapper/src/main/resources/mappers/CompanyAdminMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/mapper/src/main/resources/mappers/CompanyAdminMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mapper/src/main/resources/mappers/CompanyMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/mapper/src/main/resources/mappers/CompanyMapper.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mapper/src/main/resources/mappers/CustomerMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/mapper/src/main/resources/mappers/CustomerMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mapper/src/main/resources/mappers/EducationMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/mapper/src/main/resources/mappers/EducationMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mapper/src/main/resources/mappers/HonorMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/mapper/src/main/resources/mappers/HonorMapper.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mapper/src/main/resources/mappers/JobMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/mapper/src/main/resources/mappers/JobMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mapper/src/main/resources/mappers/ProjectExperienceMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/mapper/src/main/resources/mappers/ProjectExperienceMapper.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mapper/src/main/resources/mappers/ResumeDeliveryRecordMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/mapper/src/main/resources/mappers/ResumeDeliveryRecordMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/src/main/java/com/yun/service/business/CompanyAdminService.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/src/main/java/com/yun/service/business/CompanyAdminService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/src/main/java/com/yun/service/impl/CompanyAdminServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/src/main/java/com/yun/service/impl/CompanyAdminServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/src/main/java/com/yun/service/impl/ShowCustomerResumeServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/src/main/java/com/yun/service/impl/ShowCustomerResumeServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mapper/src/main/resources/mappers/ResumeMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/mapper/src/main/resources/mappers/ResumeMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mapper/src/main/resources/mappers/SkillMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/mapper/src/main/resources/mappers/SkillMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mapper/src/main/resources/mappers/WorkExperienceMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/mapper/src/main/resources/mappers/WorkExperienceMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/src/main/java/com/yun/service/business/CompanyAdminService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/src/main/java/com/yun/service/business/CompanyDesService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/src/main/java/com/yun/service/business/CustomerService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/src/main/java/com/yun/service/business/InsertCompanyInfService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/src/main/java/com/yun/service/business/PostJobService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/src/main/java/com/yun/service/business/ResumeDeliveryRecordService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/src/main/java/com/yun/service/business/SearchCustomerService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/src/main/java/com/yun/service/business/ShowCustomerEducationAndOthersService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/src/main/java/com/yun/service/business/ShowCustomerResumeService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/src/main/java/com/yun/service/business/ShowIndexCustomerResumeService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/src/main/java/com/yun/service/impl/CompanyAdminServiceImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/src/main/java/com/yun/service/impl/CompanyDesServiceImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/src/main/java/com/yun/service/impl/CustomerServiceImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/src/main/java/com/yun/service/impl/InsertCompanyInfServiceImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/src/main/java/com/yun/service/impl/PostJobServiceImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/src/main/java/com/yun/service/impl/ResumeDeliveryRecordServiceImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/src/main/java/com/yun/service/impl/SearchCustomerServiceImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/src/main/java/com/yun/service/impl/ShowCustomerEducationServiceImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/src/main/java/com/yun/service/impl/ShowCustomerResumeServiceImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/src/main/java/com/yun/service/impl/ShowIndexCustomerResumeServiceImpl.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -94,11 +137,11 @@
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4" value="" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="restartRequiresConfirmation" value="false" />
-    <property name="settings.editor.selected.configurable" value="reference.settings.project.maven.runner" />
+    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -121,30 +164,26 @@
       <recent name="com.yun.dao.mapper" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="com.yun.beans.vo" />
+      <recent name="com.yun.service.impl" />
+      <recent name="com.yun.service.business" />
       <recent name="com.yun.beans.entity" />
-      <recent name="com.yun.recruiter.controller" />
-      <recent name="com.yun" />
+      <recent name="com.yun.sysytem.utils" />
+      <recent name="com.yun.beans.vo" />
     </key>
   </component>
   <component name="RunManager" selected="Spring Boot.ApiApplication">
-    <configuration name="ApiApplicationTests.test4" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="api" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.yun.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.yun" />
-      <option name="MAIN_CLASS_NAME" value="com.yun.ApiApplicationTests" />
-      <option name="METHOD_NAME" value="test4" />
-      <option name="TEST_OBJECT" value="method" />
+    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ApiApplicationTests.test5" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="ApiApplicationTests.mailSender" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="api" />
       <extension name="coverage">
         <pattern>
@@ -154,7 +193,7 @@
       </extension>
       <option name="PACKAGE_NAME" value="com.yun" />
       <option name="MAIN_CLASS_NAME" value="com.yun.ApiApplicationTests" />
-      <option name="METHOD_NAME" value="test5" />
+      <option name="METHOD_NAME" value="mailSender" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -208,6 +247,22 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="ApiApplicationTests.test9" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="api" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.yun.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.yun" />
+      <option name="MAIN_CLASS_NAME" value="com.yun.ApiApplicationTests" />
+      <option name="METHOD_NAME" value="test9" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="ApiApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="api" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.yun.ApiApplication" />
@@ -216,20 +271,20 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="JUnit.ApiApplicationTests.test4" />
-      <item itemvalue="JUnit.ApiApplicationTests.test5" />
       <item itemvalue="JUnit.ApiApplicationTests.test6" />
       <item itemvalue="JUnit.ApiApplicationTests.test7" />
       <item itemvalue="JUnit.ApiApplicationTests.test8" />
+      <item itemvalue="JUnit.ApiApplicationTests.test9" />
+      <item itemvalue="JUnit.ApiApplicationTests.mailSender" />
       <item itemvalue="Spring Boot.ApiApplication" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.ApiApplicationTests.mailSender" />
+        <item itemvalue="JUnit.ApiApplicationTests.test9" />
         <item itemvalue="JUnit.ApiApplicationTests.test8" />
         <item itemvalue="JUnit.ApiApplicationTests.test7" />
         <item itemvalue="JUnit.ApiApplicationTests.test6" />
-        <item itemvalue="JUnit.ApiApplicationTests.test5" />
-        <item itemvalue="JUnit.ApiApplicationTests.test4" />
       </list>
     </recent_temporary>
   </component>
@@ -305,6 +360,24 @@
       <workItem from="1637248061368" duration="625000" />
       <workItem from="1637285316642" duration="942000" />
       <workItem from="1637302949889" duration="2342000" />
+      <workItem from="1637305928675" duration="637000" />
+      <workItem from="1637307112987" duration="354000" />
+      <workItem from="1637307771671" duration="1202000" />
+      <workItem from="1637384745113" duration="881000" />
+      <workItem from="1637389145153" duration="814000" />
+      <workItem from="1637421294767" duration="127000" />
+      <workItem from="1637806716436" duration="628000" />
+      <workItem from="1637897517222" duration="1000000" />
+      <workItem from="1637904434352" duration="1305000" />
+      <workItem from="1637906124567" duration="41000" />
+      <workItem from="1637908428030" duration="613000" />
+      <workItem from="1637909679047" duration="10000" />
+      <workItem from="1637913447406" duration="1968000" />
+      <workItem from="1637915441148" duration="727000" />
+      <workItem from="1637929945058" duration="1875000" />
+      <workItem from="1638164895828" duration="7701000" />
+      <workItem from="1638177547820" duration="155000" />
+      <workItem from="1638235221498" duration="5392000" />
     </task>
     <task id="LOCAL-00001" summary="整合项目架构">
       <created>1632637021522</created>
@@ -593,7 +666,28 @@
       <option name="project" value="LOCAL" />
       <updated>1636963770019</updated>
     </task>
-    <option name="localTasksCounter" value="42" />
+    <task id="LOCAL-00042" summary="增加了更改简历投递状态的接口">
+      <created>1637306022824</created>
+      <option name="number" value="00042" />
+      <option name="presentableId" value="LOCAL-00042" />
+      <option name="project" value="LOCAL" />
+      <updated>1637306022824</updated>
+    </task>
+    <task id="LOCAL-00043" summary="新增功能，审批简历合格后，向用户发送通知邮件">
+      <created>1637306091367</created>
+      <option name="number" value="00043" />
+      <option name="presentableId" value="LOCAL-00043" />
+      <option name="project" value="LOCAL" />
+      <updated>1637306091367</updated>
+    </task>
+    <task id="LOCAL-00044" summary="增加功能：主页关键字搜索">
+      <created>1637916157307</created>
+      <option name="number" value="00044" />
+      <option name="presentableId" value="LOCAL-00044" />
+      <option name="project" value="LOCAL" />
+      <updated>1637916157308</updated>
+    </task>
+    <option name="localTasksCounter" value="45" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -612,9 +706,9 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="提供其他职位列表的接口" />
-    <MESSAGE value="job表新增company_admin_id（职位添加人id）字段" />
-    <MESSAGE value="job相关表更换other1,other2,status字段名为job_status，job_other1，job_other2" />
+    <ignored-roots>
+      <path value="$PROJECT_DIR$" />
+    </ignored-roots>
     <MESSAGE value="company_admin表新增字段company_admin_position和company_admin_img" />
     <MESSAGE value="新增查询职位详情信息的接口" />
     <MESSAGE value="company表新增字段companyLegalPerson,companyRegisteredCapital,companySetData" />
@@ -637,7 +731,10 @@
     <MESSAGE value="提供接口：&#10;用户如果没有绑定公司就先添加公司，要是公司有了就申请公司管理员加入，没有就加公司信息，并绑定第一个添加的人为公司管理员" />
     <MESSAGE value="增加了查看首页用户简历的接口，更改了部分实体类" />
     <MESSAGE value="细节优化" />
-    <option name="LAST_COMMIT_MESSAGE" value="细节优化" />
+    <MESSAGE value="增加了更改简历投递状态的接口" />
+    <MESSAGE value="新增功能，审批简历合格后，向用户发送通知邮件" />
+    <MESSAGE value="增加功能：主页关键字搜索" />
+    <option name="LAST_COMMIT_MESSAGE" value="增加功能：主页关键字搜索" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -648,6 +745,10 @@
         </breakpoint>
       </breakpoints>
     </breakpoint-manager>
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/Recruiter$ApiApplication.ic" NAME="ApiApplication Coverage Results" MODIFIED="1637285388881" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />

@@ -14,33 +14,4 @@
         <result column="other1" jdbcType="VARCHAR" property="other1"/>
         <result column="other2" jdbcType="VARCHAR" property="other2"/>
     </resultMap>
-    <resultMap id="ProjectExperienceVo" type="com.yun.beans.vo.ProjectExperienceVo">
-        <result column="resume_name" jdbcType="VARCHAR" property="resumeName"/>
-        <result column="cust_id" jdbcType="INTEGER" property="custId"/>
-        <result column="project_experi_id" jdbcType="INTEGER" property="projectExperiId"/>
-        <result column="resume_id" jdbcType="INTEGER" property="resumeId"/>
-        <result column="project_company_name" jdbcType="VARCHAR" property="projectCompanyName"/>
-        <result column="project_start_time" jdbcType="DATE" property="projectStartTime"/>
-        <result column="project_end_time" jdbcType="TIMESTAMP" property="projectEndTime"/>
-        <result column="project_name" jdbcType="VARCHAR" property="projectName"/>
-        <result column="project_content_desc" jdbcType="VARCHAR" property="projectContentDesc"/>
-        <result column="project_duty_desc" jdbcType="VARCHAR" property="projectDutyDesc"/>
-    </resultMap>
-    <select id="showAllProject" resultMap="ProjectExperienceVo">
-        SELECT r.resume_id,
-               r.resume_name,
-               r.cust_id,
-               p.project_experi_id,
-               p.project_company_name,
-               p.project_start_time,
-               p.project_end_time,
-               p.project_name,
-               p.project_content_desc,
-               p.project_duty_desc
-        from resume r
-                 INNER JOIN project_experience p
-                            on r.resume_id = p.resume_id
-        where r.cust_id = #{custId}
-          and r.status = 1
-    </select>
 </mapper>

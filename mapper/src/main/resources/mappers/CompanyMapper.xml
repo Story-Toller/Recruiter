@@ -21,14 +21,4 @@
         <result column="company_registered_capital" jdbcType="VARCHAR" property="companyRegisteredCapital"/>
         <result column="company_set_data" jdbcType="VARCHAR" property="companySetData"/>
     </resultMap>
-    <select id="selectComanyNameIsEmply" resultType="string">
-        SELECT company_name
-        from company
-        where company_name = #{companyName}
-    </select>
-    <select id="selectIdByCompanyName" resultType="int">
-        SELECT company_id
-        from company
-        where company_name = #{companyName}
-    </select>
 </mapper>

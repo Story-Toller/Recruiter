@@ -24,32 +24,4 @@
         <result column="other1" jdbcType="VARCHAR" property="other1"/>
         <result column="other2" jdbcType="VARCHAR" property="other2"/>
     </resultMap>
-    <select id="showAllowedResume" resultMap="BaseResultMap">
-        SELECT cust_id,
-               resume_name,
-               resume_create_time,
-               resume_update_time,
-               resume_profile,
-               resume_birth,
-               resume_telno,
-               resume_email,
-               resume_gender,
-               resume_leaving__working,
-               resume_live_city,
-               resume_personid,
-               resume_income,
-               resume_full_part_time,
-               status,
-               other1,
-               other2
-        from resume
-        where status = 1
-          and cust_id = #{custId}
-    </select>
-    <select id="selectResumeIdByCustomerId" resultType="int">
-        SELECT resume_id
-        from resume
-        where status = 1
-          and cust_id = #{custId}
-    </select>
 </mapper>

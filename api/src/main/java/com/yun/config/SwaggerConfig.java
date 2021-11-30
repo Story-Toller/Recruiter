@@ -34,10 +34,10 @@ public class SwaggerConfig {
 
         Contact contact = new Contact("Yun", "https://yun.cn", "1269355513@qq.com");
         return new ApiInfo(
-                "API doc for yun",
-                "招聘平台API文档，仅用于个人设计",
-                "v2.0",
-                "https://yun.cn",
+                "YUN Project",
+                "Admin for Recruitment",
+                "v2.0.3",
+                "https://localhost:9026/",
                 contact,
                 "Apache 2.0",
                 "http://www.apache.org/licenses/LICENSE-2.0",

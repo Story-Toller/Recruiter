@@ -18,29 +18,4 @@
         <result column="other1" jdbcType="VARCHAR" property="other1"/>
         <result column="other2" jdbcType="VARCHAR" property="other2"/>
     </resultMap>
-    <update id="chengePhone">
-        update company_admin
-        set company_admin_telno=#{companyAdminTelno}
-        where company_admin_id = #{companyAdminId}
-    </update>
-    <update id="chengeEmail">
-        update company_admin
-        set company_admin_email=#{companyAdminEmail}
-        where company_admin_id = #{companyAdminId}
-    </update>
-    <update id="chengePsaaword">
-        UPDATE company_admin
-        set company_admin_password=#{companyAdminPassword}
-        where company_admin_id = #{companyAdminId}
-    </update>
-    <select id="companyIdIsEmpty" resultType="string">
-        SELECT company_id
-        from company_admin
-        where company_admin_id = #{CompanyAdminId}
-    </select>
-    <update id="updateCompanyId">
-        UPDATE company_admin
-        SET company_id=#{companyId}
-        WHERE company_admin_id = #{companyAdminId}
-    </update>
 </mapper>

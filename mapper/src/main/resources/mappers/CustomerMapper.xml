@@ -15,40 +15,4 @@
         <result column="other1" jdbcType="VARCHAR" property="other1"/>
         <result column="other2" jdbcType="VARCHAR" property="other2"/>
     </resultMap>
-    <select id="showAllCustomer" resultMap="BaseResultMap">
-        SELECT cust_id,
-               cust_name,
-               cust_telno,
-               cust_email,
-               cust_password,
-               cust_regist_time,
-               status,
-               other1,
-               other2
-        from customer
-        where status = 1
-    </select>
-    <select id="selectName" resultType="string">
-        select cust_name
-        from customer
-        where cust_id = #{custId}
-    </select>
-    <select id="selectEmail" resultType="string">
-        SELECT cust_email
-        from customer
-        where cust_id = #{custId}
-    </select>
-    <select id="selectCustomerByName" resultMap="BaseResultMap">
-        SELECT cust_id,
-               cust_name,
-               cust_telno,
-               cust_email,
-               cust_regist_time,
-               status,
-               other1,
-               other2
-        from customer
-        where cust_name like #{keyword} limit #{start}
-            , #{limit}
-    </select>
 </mapper>
